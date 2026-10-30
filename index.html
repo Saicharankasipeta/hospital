@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Plus | Online Hospital Appointments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="navbar">
+    <a href="#" class="logo">
+        <span class="logo-icon">✚</span>
+        HealthCare<span>Plus</span>
+    </a>
+
+    <nav id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Departments</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#about">About Us</a>
+        <a href="#appointment" class="nav-btn">Book Appointment</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">YOUR HEALTH, OUR PRIORITY</span>
+        <h1>Quality Healthcare<br>Made <span>Simple.</span></h1>
+        <p>
+            Book appointments with experienced doctors.
+            Get trusted medical care with just a few clicks.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#appointment" class="primary-btn">Book Appointment →</a>
+            <a href="#doctors" class="secondary-btn">Explore Doctors</a>
+        </div>
+
+        <div class="stats">
+            <div><h2>25+</h2><p>Expert Doctors</p></div>
+            <div><h2>10+</h2><p>Departments</p></div>
+            <div><h2>24/7</h2><p>Patient Support</p></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="medical-card">
+            <div class="medical-icon">✚</div>
+            <h2>Better Care,<br>Better Life.</h2>
+            <p>Professional healthcare for everyone.</p>
+            <div class="doctor-avatar">👨‍⚕️</div>
+            <div class="online-status">● Available for appointments</div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section class="section" id="services">
+    <div class="section-heading">
+        <span>OUR SPECIALITIES</span>
+        <h2>Our Medical Departments</h2>
+        <p>Expert treatment for all your healthcare needs.</p>
+    </div>
+
+    <div class="department-grid">
+        <div class="department-card">
+            <div class="dept-icon">❤️</div>
+            <h3>Cardiology</h3>
+            <p>Heart health and cardiovascular care.</p>
+        </div>
+
+        <div class="department-card">
+            <div class="dept-icon">🧠</div>
+            <h3>Neurology</h3>
+            <p>Expert care for brain and nervous system.</p>
+        </div>
+
+        <div class="department-card">
+            <div class="dept-icon">🦴</div>
+            <h3>Orthopedics</h3>
+            <p>Bone, joint and muscle treatments.</p>
+        </div>
+
+        <div class="department-card">
+            <div class="dept-icon">🩺</div>
+            <h3>General Medicine</h3>
+            <p>Complete general health consultations.</p>
+        </div>
+
+        <div class="department-card">
+            <div class="dept-icon">🧴</div>
+            <h3>Dermatology</h3>
+            <p>Skin, hair and cosmetic treatments.</p>
+        </div>
+
+        <div class="department-card">
+            <div class="dept-icon">👶</div>
+            <h3>Pediatrics</h3>
+            <p>Specialized healthcare for children.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Doctors -->
+<section class="section doctors-section" id="doctors">
+    <div class="section-heading">
+        <span>MEET OUR SPECIALISTS</span>
+        <h2>Our Experienced Doctors</h2>
+        <p>Get treatment from our qualified medical professionals.</p>
+    </div>
+
+    <div class="doctor-grid">
+
+        <div class="doctor-card">
+            <div class="doctor-photo">👨‍⚕️</div>
+            <h3>Dr. Arjun Kumar</h3>
+            <p>Cardiologist</p>
+            <span>10+ Years Experience</span>
+            <button onclick="selectDoctor('Dr. Arjun Kumar','Cardiology')">
+                Book Appointment
+            </button>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-photo">👩‍⚕️</div>
+            <h3>Dr. Priya Sharma</h3>
+            <p>Neurologist</p>
+            <span>8+ Years Experience</span>
+            <button onclick="selectDoctor('Dr. Priya Sharma','Neurology')">
+                Book Appointment
+            </button>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-photo">👨‍⚕️</div>
+            <h3>Dr. Rahul Reddy</h3>
+            <p>Orthopedic Surgeon</p>
+            <span>12+ Years Experience</span>
+            <button onclick="selectDoctor('Dr. Rahul Reddy','Orthopedics')">
+                Book Appointment
+            </button>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-photo">👩‍⚕️</div>
+            <h3>Dr. Sneha Rao</h3>
+            <p>Dermatologist</p>
+            <span>7+ Years Experience</span>
+            <button onclick="selectDoctor('Dr. Sneha Rao','Dermatology')">
+                Book Appointment
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- About -->
+<section class="about-section" id="about">
+    <div class="about-content">
+        <span>WHY CHOOSE US?</span>
+        <h2>Healthcare You Can Trust</h2>
+        <p>
+            HealthCare Plus is designed to make healthcare accessible
+            and convenient. Our platform helps patients connect with
+            medical specialists and schedule appointments easily.
+        </p>
+
+        <div class="about-points">
+            <p>✓ Experienced Medical Professionals</p>
+            <p>✓ Easy Online Appointment Booking</p>
+            <p>✓ Multiple Medical Departments</p>
+            <p>✓ Patient-Focused Healthcare</p>
+        </div>
+    </div>
+    <div class="about-visual">
+        <div class="about-symbol">✚</div>
+        <h2>Care Beyond<br>Expectations</h2>
+        <p>Your health matters to us.</p>
+    </div>
+</section>
+
+<!-- Appointment Booking -->
+<section class="appointment-section" id="appointment">
+    <div class="section-heading">
+        <span>ONLINE BOOKING</span>
+        <h2>Book Your Appointment</h2>
+        <p>Fill in your details to schedule a consultation.</p>
+    </div>
+
+    <div class="booking-container">
+        <form id="appointmentForm">
+
+            <div class="form-title">
+                <h3>Patient Information</h3>
+                <p>All fields marked * are required.</p>
+            </div>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Patient Name *</label>
+                    <input type="text" id="patientName"
+                        placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile Number *</label>
+                    <input type="tel" id="phone"
+                        placeholder="10-digit mobile number"
+                        pattern="[6-9][0-9]{9}" maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" id="email"
+                        placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Age *</label>
+                    <input type="number" id="age"
+                        placeholder="Enter your age" min="1" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <select id="gender" required>
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Department *</label>
+                    <select id="department" required>
+                        <option value="">Select Department</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Orthopedics</option>
+                        <option>General Medicine</option>
+                        <option>Dermatology</option>
+                        <option>Pediatrics</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Doctor *</label>
+                    <select id="doctor" required>
+                        <option value="">Select Doctor</option>
+                        <option>Dr. Arjun Kumar</option>
+                        <option>Dr. Priya Sharma</option>
+                        <option>Dr. Rahul Reddy</option>
+                        <option>Dr. Sneha Rao</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Appointment Date *</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Appointment Time *</label>
+                    <select id="time" required>
+                        <option value="">Select Time</option>
+                        <option>09:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>02:00 PM</option>
+                        <option>03:00 PM</option>
+                        <option>04:00 PM</option>
+                        <option>05:00 PM</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group full-width">
+                <label>Reason for Appointment</label>
+                <textarea id="reason"
+                    placeholder="Briefly describe your health concern..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Confirm Appointment →
+            </button>
+
+            <p class="form-note">
+                This is a demonstration booking website. No real hospital
+                appointment is created.
+            </p>
+
+        </form>
+    </div>
+</section>
+
+<!-- Confirmation Modal -->
+<div class="modal" id="confirmationModal">
+    <div class="modal-content">
+        <div class="success-icon">✓</div>
+        <h2>Appointment Submitted!</h2>
+        <p>Your appointment request has been saved in this browser.</p>
+
+        <div class="appointment-details" id="appointmentDetails"></div>
+
+        <button onclick="closeModal()" class="primary-btn">
+            Done
+        </button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div>
+            <a href="#" class="logo footer-logo">
+                ✚ HealthCare<span>Plus</span>
+            </a>
+            <p>Making healthcare simple, accessible and convenient.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#services">Departments</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointments</a>
+        </div>
+
+        <div>
+            <h3>Contact Us</h3>
+            <p>📍 Hyderabad, Telangana</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉ support@healthcareplus.com</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © 2026 HealthCare Plus. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
